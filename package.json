@@ -1,0 +1,36 @@
+{
+  "name": "grunt-beautify",
+  "description": "Javascript beautifier task for grunt",
+  "version": "0.1.0",
+  "homepage": "https://github.com/pix/grunt-beautify",
+  "author": {
+    "name": "Camille Moncelier",
+    "email": "camille@moncelier.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pix/grunt-beautify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pix/grunt-beautify/issues"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/pix/grunt-beautify/blob/master/LICENSE-MIT"
+  }],
+  "main": "grunt.js",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt": "~0.3.11",
+    "node-beautify": "0.0.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.11"
+  },
+  "keywords": ["gruntplugin", "beautifier", "grunt", "pretty", "print", "printer"]
+}
