@@ -11,7 +11,7 @@ Then add this line to your project's `grunt.js` gruntfile:
 grunt.loadNpmTasks('grunt-beautify');
 ```
 
-See the [grunt.js gruntfile](/pix/grunt-beautify/grunt.js) for an example.
+See the [grunt.js gruntfile](/pix/grunt-beautify/blob/master/grunt.js) for an example.
 
 [grunt]: https://github.com/cowboy/grunt
 [getting_started]: https://github.com/cowboy/grunt/blob/master/docs/getting_started.md
