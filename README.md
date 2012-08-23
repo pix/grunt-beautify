@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/pix/grunt-beautify.png)](http://travis-ci.org/pix/grunt-beautify)
 # grunt-beautify
 
 Javascript beautifier for grunt
