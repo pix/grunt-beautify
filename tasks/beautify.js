@@ -16,7 +16,6 @@ module.exports = function (grunt) {
   var default_options = {
     indentSize: 2
   };
-  var EOL = require('os').EOL;
 
   var merge = function () {
     var out = {};
@@ -47,11 +46,14 @@ module.exports = function (grunt) {
         options = default_options;
       }
     }
+    var endOfLineCharacters = options.endOfLineCharacters || require('os').EOL;
 
     // Beautify specified files.
     grunt.file.expandFiles(this.file.src).forEach(function (filepath) {
       var result = beautifier.beautifyJs(grunt.file.read(filepath), options);
-      result = result.replace(/\r\n|\n\r|\r|\n/g, EOL);
+      if (options.endOfLineNormalization) {
+        result = result.replace(/\r\n|\n\r|\r|\n/g, endOfLineCharacters);
+      }
       grunt.file.write(filepath, result);
     });
 
