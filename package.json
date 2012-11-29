@@ -1,7 +1,7 @@
 {
   "name": "grunt-beautify",
   "description": "Javascript beautifier task for grunt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/pix/grunt-beautify",
   "author": {
     "name": "Camille Moncelier",
